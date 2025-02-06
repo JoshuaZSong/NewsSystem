@@ -3,11 +3,11 @@
  *
 */
 
-import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client';
+
+// 清除现有的 HTML 内容
+document.body.innerHTML = '<div id="app"></div>';
 
 
-ReactDOM.render(<h1>
-    1111
-    2111
-</h1>,document.getElementById("root"))
+const root = createRoot(document.getElementById('app'));
+root.render(<h1>Hello, world</h1>);
